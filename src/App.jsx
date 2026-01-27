@@ -6,9 +6,7 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import RoutLeyout from './compunent/RoutLeyout'
 import Home from './compunent/Home'
 import Services from './compunent/Services'
-import Pricing from './compunent/Pricing'
 import About from './About'
-import GetaFree from './GetaFree'
 import Contact from './Contact'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
