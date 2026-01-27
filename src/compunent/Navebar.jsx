@@ -22,14 +22,11 @@ const Navebar = () => {
             <Link to="/product">
               <li className=' cursor-pointer hover:text-[#9572f5]'>Product</li>
             </Link>
-            <Link to="/pricing">
-              <li className=' cursor-pointer hover:text-[#9572f5]'>Pricing</li>
-            </Link>
             <Link to="/about">
               <li className=' cursor-pointer hover:text-[#9572f5]'>About Us</li>
             </Link>
-            <Link to="/getaFree">
-              <li className=' cursor-pointer bg-[#9572f5] py-2 px-3 border-2 rounded-2xl text-white hover:bg-[#5E27F5] hover:ease-in-out'>Get a Free Quote</li>
+            <Link to="/contact">
+              <li className=' cursor-pointer bg-[#9572f5] py-2 px-3 border-2 rounded-2xl text-white hover:bg-[#5E27F5] hover:ease-in-out'>Contact</li>
             </Link>
           </ul>
 

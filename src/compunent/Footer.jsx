@@ -34,11 +34,8 @@ const Footer = () => {
                 <Link to="/services">
                   <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>Services</li>
                 </Link>
-                <Link to="/Portfolio">
-                  <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>Portfolio</li>
-                </Link>
-                <Link to="/pricing">
-                  <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>Pricing</li>
+                <Link to="/product">
+                  <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>Product</li>
                 </Link>
                 <Link to="/about">
                   <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>About Us</li>
@@ -81,7 +78,7 @@ const Footer = () => {
               <h2 className='font-extrabold py-1.5'>Resources</h2>
               <ul className='  gap-6 items-center'>
                 {/* <Link to="/"> */}
-                  <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>Blog</li>
+                  <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'> Blog</li>
                 {/* </Link> */}
                 {/* <Link to="/services"> */}
                   <li className=' cursor-pointer hover:text-[#9572f5] py-1.5'>FAQs</li>
