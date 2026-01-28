@@ -1,19 +1,10 @@
-// import React from 'react'
-
-// const Contact = () => {
-//   return (
-//     <div>Contact</div>
-//   )
-// }
-
-// export default Contact
-
 
 import React, { useState } from "react";
 import { Mail, Phone, MessageCircle, MapPin, Sun, Moon } from "lucide-react";
-
+import { IoMdCall } from "react-icons/io";
+import whatsapp from "./assets/whatsapp.png"
 export default function Contact() {
-  const [dark, setDark] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,7 +25,7 @@ export default function Contact() {
   };
 
   return (
-    <section className={dark ? "dark" : ""}>
+    <section >
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
         <div className="max-w-5xl w-full bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
           {/* Header */}
@@ -47,12 +38,7 @@ export default function Contact() {
                 Professional printing solutions you can trust
               </p>
             </div>
-            <button
-              onClick={() => setDark(!dark)}
-              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
-            >
-              {dark ? <Sun /> : <Moon />}
-            </button>
+
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -98,35 +84,28 @@ export default function Contact() {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                name="name"
-                type="text"
-                required
-                placeholder="Your Name"
-                className="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
-              />
-              <input
-                name="email"
-                type="email"
-                required
-                placeholder="Your Email"
-                className="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
-              />
-              <textarea
-                name="message"
-                rows="4"
-                required
-                placeholder="Your Message"
-                className="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white"
-              />
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
-              >
-                Send via Email & WhatsApp
-              </button>
-            </form>
+            <div>
+              <div className=" flex justify-center"><img className="h-70" src={whatsapp} alt="" /></div>
+              <div className=" text-center">
+                <h2 className=" font-bold text-[40px]">WHATSAPP CONTACT</h2>
+              </div>
+              <div className=" flex justify-center">
+                <a target="-blank" href="https://wa.me/971569675332">
+                  <button
+                    type="button"
+                    className="w-52 h-14 flex items-center justify-center gap-2 cursor-cell
+                 bg-blue-600 text-white font-medium 
+                 rounded-lg shadow-md
+                 hover:bg-blue-700 hover:shadow-lg 
+                 transition duration-300"
+                  >
+                    <IoMdCall className="text-xl" />
+                    <span className="text-sm md:text-base">+971 52 808 9629</span>
+                  </button>
+                </a>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
