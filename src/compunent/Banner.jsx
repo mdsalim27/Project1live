@@ -33,7 +33,7 @@ const slides = [
 
 const Banner = () => {
   return (
-    <div className="w-full py-5">
+    <div className="w-full pt-22 pb-5">
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         loop

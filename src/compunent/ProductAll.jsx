@@ -18,14 +18,16 @@ import product13 from "../assets/product6.png"
 import product14 from "../assets/product6.png"
 
 import { Link } from 'react-router-dom'
-const images = [product, product1, product2, product3, product4, product5, product6  ,product7 ,product8,product9,product10,product11,product12,product13,product14  ];
+const images = [product, product1, product2, product3, product4, product5, product6, product7, product8, product9, product10, product11, product12, product13, product14];
 
 const ProductAll = () => {
     return (
         <Container>
-            <div className=' grid grid-cols-3 my-9'>
+            <div className=' text-center  pt-18'><h2 className='text-blue-600 font-bold text-[60px]' >All Product</h2></div>
+
+            <div className=' grid grid-cols-3  mb-9'>
                 {images.map((img, index) => (
-                    <div className="border rounded-xl shadow hover:shadow-lg transition w-[96%] mt-5 ">
+                    <div className="border rounded-xl shadow hover:shadow-lg transition w-[96%] mt-5 cursor-pointer">
                         <img
                             src={img}
                             alt={`product-${index}`}

@@ -16,10 +16,10 @@ const images = [product, product1, product2, product3, product4, product5,];
 const Product = () => {
     return (
         <Container>
-            <div className=' text-center mt-6'><h2 className='text-blue-600 font-bold text-[60px]' >All Product</h2></div>
+            <div className=' text-center  pt-18'><h2 className='text-blue-600 font-bold text-[60px]' >All Product</h2></div>
             <div className=' grid grid-cols-3 mb-5'>
                 {images.map((img, index) => (
-                    <div className="border rounded-xl shadow hover:shadow-lg transition w-[96%] mt-5 ">
+                    <div className="border rounded-xl shadow hover:shadow-lg transition w-[96%] mt-5 cursor-pointer">
                         <img
                             src={img}
                             alt={`product-${index}`}
