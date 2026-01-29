@@ -25,8 +25,8 @@ export default function Contact() {
   };
 
   return (
-    <section >
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4">
+    <section  className="pt-16">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center px-4 ">
         <div className="max-w-5xl w-full bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
           {/* Header */}
           <div className="flex justify-between items-center mb-8">
