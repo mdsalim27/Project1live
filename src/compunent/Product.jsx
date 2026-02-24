@@ -77,7 +77,7 @@ const products = [
   { id: 4, name: "Bluetooth Speaker", price: 1499, image: product3 },
   { id: 5, name: "Laptop Stand", price: 1200, image: product4 },
   { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
-  { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
+  { id: 6, name: "testing", price: 699, image: product5 },
   { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
 ];
 
@@ -92,7 +92,7 @@ const Product = () => {
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 mt-6">
-          {products.map((product) => (
+          {products.map((productss) => (
             <div
               key={product.id}
               className="group relative h-[250px] w-full 
@@ -103,8 +103,8 @@ const Product = () => {
               {/* Product Image */}
               <div className="h-[70%] overflow-hidden">
                 <img
-                  src={product.image}
-                  alt={product.name}
+                  src={productss.image}
+                  alt={productss.name}
                   className="w-full h-full object-cover 
                              transition-transform duration-700 ease-in-out 
                              group-hover:scale-110"
@@ -112,8 +112,8 @@ const Product = () => {
               </div>        
               {/* Product Info */}
               <div className="h-[30%] p-4 flex flex-col justify-center">
-                <h3 className="text-lg font-semibold">{product.name}</h3>
-                <p className="text-blue-600 font-bold mt-1">৳ {product.price}</p>
+                <h3 className="text-lg font-semibold">{productss.name}</h3>
+                <p className="text-blue-600 font-bold mt-1">৳ {productss.price}</p>
               </div>
             </div>
           ))}

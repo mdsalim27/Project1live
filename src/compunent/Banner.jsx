@@ -12,7 +12,7 @@ const slides = [
     title: "New Winter Collection",
     subtitle: "Up to 50% Off",
     image:
-      "https://image2url.com/r2/default/images/1768988552384-846c72b6-6613-4189-8fd7-666f30e5ac2a.jpg",
+      "https://image2url.com/r2/default/images/1771919871276-2b82a918-371c-48a0-96db-c0e866bfe401.png",
   },
   {
     id: 2,
