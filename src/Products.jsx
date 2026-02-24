@@ -17,44 +17,51 @@ const images = [product, product1, product2, product3];
 
 const Products = () => {
     const swiperRef = useRef(null);
-
     return (
         <section>
             <Container>
                 <div className=" relative ">
-
                     {/* Heading */}
-                    <div className="text-center py-10">
-                        <h2 className="font-semibold text-[40px]">
+                    <div className="text-center py-2">
+                        <h2 className="font-semibold text-[40px] italic">
                             Complete Printing Solutions for Every Need
                         </h2>
-                        <p className="text-[20px] px-20 pt-5">
+                        <p className="text-[20px] py-2 italic">
                             From business essentials to large-format displays, we deliver exceptional quality on every project
                         </p>
                     </div>
-
                     {/* Product Slider */}
                     <Swiper
                         slidesPerView={3}
                         loop={true}
                         spaceBetween={20}
-                        onSwiper={(swiper) => (swiperRef.current = swiper)}
-                    >
+                        onSwiper={(swiper) => (swiperRef.current = swiper)}  >
+                            
                         {images.map((img, index) => (
                             <SwiperSlide key={index}>
                                 {/* Product Card */}
-                                <div className="border rounded-xl p-4 shadow hover:shadow-2xl hover:cursor-pointer">
-                                    <img
-                                        src={img}
-                                        alt={`product-${index}`}
-                                        className="w-full h-[250px] object-cover rounded-lg"
-                                    />
-                                    <h3 className="text-xl font-semibold mt-4">
-                                        Product {index + 1}
-                                    </h3>
-                                    <p className="text-gray-600 mt-2">
-                                        High quality printing product description here.
-                                    </p>
+                                <div className="border border-blue-800 rounded-xl shadow-md 
+                                                 hover:shadow-2xl transition duration-300 
+                                                cursor-pointer overflow-hidden">
+                                    {/* Image */}
+                                    <div className="overflow-hidden">
+                                        <img
+                                            src={img}
+                                            alt={`product-${index}`}
+                                            className="w-full h-[250px] object-cover 
+                                                       transition-transform duration-700 ease-in-out 
+                                                       hover:-translate-y-3 hover:scale-105"
+                                        />
+                                    </div>
+                                    {/* Text Content */}
+                                    <div className="bg-blue-600 text-white p-5">
+                                        <h3 className="text-xl font-semibold mb-2">
+                                            Product {index + 1}
+                                        </h3>
+                                        <p className="text-sm leading-relaxed text-blue-100">
+                                            High quality printing product description here.
+                                        </p>
+                                    </div>
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -63,23 +70,15 @@ const Products = () => {
                     <div className="flex gap-3 mt-4">
                         <button
                             onClick={() => swiperRef.current.slidePrev()}
-                            className="px-4 cursor-pointer py-2 absolute top-90 left-[-45px] z-99"
-                        >
+                            className="px-4 cursor-pointer py-2 absolute top-90 left-[-45px] z-99"  >
                             <IoIosArrowDropleft className="w-12 h-12 text-gray-600 hover:text-black transition duration-300" />
-
                         </button>
-
-
                         <button onClick={() => swiperRef.current.slideNext()}
-                            className="px-4 cursor-pointer py-2 absolute top-90 right-[-45px] z-99"
-                        >
+                            className="px-4 cursor-pointer py-2 absolute top-90 right-[-45px] z-99" >
                             <IoIosArrowDropright className="w-12 h-12 text-gray-600 hover:text-black transition duration-300" />
-
                         </button>
                     </div>
                 </div>
-
-
             </Container>
         </section>
     );

@@ -7,7 +7,6 @@ import product3 from "../assets/product3.png"
 import product4 from "../assets/product4.png"
 import product5 from "../assets/product5.png"
 import product6 from "../assets/product6.png"
-
 import product7 from "../assets/product6.png"
 import product8 from "../assets/product6.png"
 import product9 from "../assets/product6.png"
@@ -24,15 +23,23 @@ const ProductAll = () => {
     return (
         <Container>
             <div className=' text-center  pt-18'><h2 className='text-blue-600 font-bold text-[60px]' >All Product</h2></div>
-
-            <div className=' grid grid-cols-3  mb-9'>
+            <div className=' grid grid-cols-3 gap-6 mb-8'>
                 {images.map((img, index) => (
-                    <div className="border rounded-xl shadow hover:shadow-lg transition w-[96%] mt-5 cursor-pointer">
-                        <img
-                            src={img}
-                            alt={`product-${index}`}
-                            className="w-full h-[250px] object-cover rounded-lg"
-                        />
+                    <div className="group w-full h-[320px] border-2 border-gray-200 
+                                rounded-2xl overflow-hidden shadow-md 
+                                hover:shadow-2xl hover:border-blue-600
+                                transition-all duration-500 ease-in-out 
+                                cursor-pointer bg-whit">
+                        <div className='overflow-hidden h-full'>
+                            <img
+                                src={img}
+                                alt={`product-${index}`}
+                                className="w-full h-full object-cover 
+                                      transform transition-transform 
+                                      duration-700 ease-in-out 
+                                      group-hover:scale-110"
+                            />
+                        </div>
                     </div>
                 ))}
             </div>

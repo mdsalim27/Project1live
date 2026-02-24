@@ -12,6 +12,7 @@ const Navebar = () => {
           <div className='grid grid-cols-2  '>
             <div>
               <img className='w-80 ' src={logo} alt="" />
+              
             </div>
             <div className='grid grid-cols-1'>
               <ul className='flex gap-6 items-center'>
