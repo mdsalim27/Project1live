@@ -13,7 +13,7 @@ import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 
 
 
-const images = [product, product1, product2, product3];
+const images = [product, product1, product2, product3,product3,];
 
 const Products = () => {
     const swiperRef = useRef(null);
@@ -32,7 +32,7 @@ const Products = () => {
                     </div>
                     {/* Product Slider */}
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={4}
                         loop={true}
                         spaceBetween={20}
                         onSwiper={(swiper) => (swiperRef.current = swiper)}  >
@@ -48,7 +48,7 @@ const Products = () => {
                                         <img
                                             src={img}
                                             alt={`product-${index}`}
-                                            className="w-full h-[250px] object-cover 
+                                            className="w-full h-[200px] object-cover 
                                                        transition-transform duration-700 ease-in-out 
                                                        hover:-translate-y-3 hover:scale-105"
                                         />

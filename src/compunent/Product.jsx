@@ -77,6 +77,8 @@ const products = [
   { id: 4, name: "Bluetooth Speaker", price: 1499, image: product3 },
   { id: 5, name: "Laptop Stand", price: 1200, image: product4 },
   { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
+  { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
+  { id: 6, name: "Smartphone Holder", price: 699, image: product5 },
 ];
 
 const Product = () => {
@@ -89,11 +91,11 @@ const Product = () => {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8 mt-6">
           {products.map((product) => (
             <div
               key={product.id}
-              className="group relative h-[350px] w-full 
+              className="group relative h-[250px] w-full 
                          border-2 border-gray-200 rounded-2xl overflow-hidden 
                          shadow-md hover:shadow-2xl hover:border-blue-600
                          transition-all duration-500 ease-in-out cursor-pointer bg-white"

@@ -10,8 +10,9 @@ const Navebar = () => {
       <div className=' bg-blue-500 fixed w-full z-99'>
         <Container>
           <div className='grid grid-cols-2  '>
-            <div>
-              <img className='w-80 ' src={logo} alt="" />
+            <div className=' h-20 pt-8'>
+              {/* <img className='w-80 ' src={logo} alt="" /> */}
+              <h1 className=' font-extrabold '>LOGO NEED</h1>
               
             </div>
             <div className='grid grid-cols-1'>

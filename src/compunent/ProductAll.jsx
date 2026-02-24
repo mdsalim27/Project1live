@@ -23,9 +23,9 @@ const ProductAll = () => {
     return (
         <Container>
             <div className=' text-center  pt-18'><h2 className='text-blue-600 font-bold text-[60px]' >All Product</h2></div>
-            <div className=' grid grid-cols-3 gap-6 mb-8'>
+            <div className=' grid grid-cols-4 gap-6 mb-8'>
                 {images.map((img, index) => (
-                    <div className="group w-full h-[320px] border-2 border-gray-200 
+                    <div className="group w-full h-[250px] border-2 border-gray-200 
                                 rounded-2xl overflow-hidden shadow-md 
                                 hover:shadow-2xl hover:border-blue-600
                                 transition-all duration-500 ease-in-out 
